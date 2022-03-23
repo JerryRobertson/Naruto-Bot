@@ -20,7 +20,7 @@ namespace TousenBot.Repositories
         }
         public Jutsu GetByExactName(string text)
         {
-            var answer = _context.Jutsu.FirstOrDefault(j => j.Name.ToLower().Equals(text.ToLower()));
+            var answer = _context.Jutsu.FirstOrDefault(j => j.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0);
             //Console.WriteLine(answer.Name);
             return answer;
         }
@@ -29,7 +29,7 @@ namespace TousenBot.Repositories
             List<Jutsu> jutsu = _context.Jutsu
                 //.Where(j => j.Name.ToLower().Contains(text.ToLower()))
                 .ToList();
-            List<Jutsu> filteredJutsu = jutsu.Where(j => j.Name.ToLower().Contains(text.ToLower())).ToList();
+            List<Jutsu> filteredJutsu = jutsu.Where(j => j.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
             return filteredJutsu;
 
         }
