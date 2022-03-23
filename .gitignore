@@ -3,8 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-config.json
-appsettings.json
+/TousenBot/config.json
+**/appsettings.json
 
 # User-specific files
 *.rsuser

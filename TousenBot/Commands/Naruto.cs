@@ -1047,58 +1047,40 @@ namespace TousenBot.Commands
                 {
                     case 1:
                         return "Regular critical hit.";
-                        break;
                     case >= 2 and <= 5:
                         return "You can choose to gain advantage on all attacks against your target until the end of your next turn, but if you do all enemies have advantage on their attack rolls against you until the end of your next turn.";
-                        break;
                     case >= 6 and <= 9:
                         return "You can choose to gain advantage on all attacks against your target next turn, your target has advantage on their attack rolls against you until the end of your next turn.";
-                        break;
                     case >= 10 and <= 14:
                         return "You gain advantage on all attacks against your target until the end of your next turn.";
-                        break;
                     case >= 15 and <= 19:
                         return "You gain advantage on all attacks against your target until the end of your next turn.";
-                        break;
                     case >= 20 and <= 24:
                         return "After your turn you move to the top of the initiative order.";
-                        break;
                     case >= 25 and <= 29:
                         return "You gain +2 to your AC against your target, and advantage on all savings throws from effects originating from your target until your next turn.";
-                        break;
                     case >= 30 and <= 39:
                         return "After your attack you can choose to attempt to grapple your opponent if you have a free hand, or attempt to shove your opponent if both hands are in use.";
-                        break;
                     case >= 40 and <= 49:
                         return "After your attack you can choose to automatically succeed in grappling your opponent if you have a free hand, or shoving your opponent if both hands are in use.";
-                        break;
                     case >= 50 and <= 59:
                         return "You are able to take the disarm action after your attack";
-                        break;
                     case >= 60 and <= 69:
                         return "You are able to take the disarm action after your attack, and can steal your opponents weapon if you have a free hand. Otherwise you can knock it up to 20 feet away.";
-                        break;
                     case >= 70 and <= 74:
                         return "You are able to use the dodge action after your attack.";
-                        break;
                     case >= 75 and <= 79:
                         return "Your target is knocked prone.";
-                        break;
                     case >= 80 and <= 84:
                         return "Your target is surprised until the end of their next turn.";
-                        break;
                     case >= 85 and <= 89:
                         return "Roll an additional set of damage dice above and beyond your normal critical roll.";
-                        break;
                     case >= 90 and <= 94:
                         return "Roll an additional set of damage dice above and beyond your normal critical roll, and the target suffers one unit of exhaustion.";
-                        break;
                     case >= 95 and <= 99:
                         return "Roll an additional set of damage dice above and beyond your normal critical roll, and the target suffers a permanent injury chosen by the DM. The permanent injury can be healed with extended rest of a length determined by the DM, but the attack leaves a scar.";
-                        break;
                     case 100:
                         return "Roll an additional set of damage dice above and beyond your normal critical roll, and the target suffers 1 unit of exhaustion, and the target suffers a permanent injury chosen by the DM. The permanent injury can be healed with extended rest of a length determined by the DM, but the attack leaves a scar.";
-                        break;
                     default:
                         break;
                 }
